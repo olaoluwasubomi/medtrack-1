@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation</title>
+    <link rel="icon" type="x-icon" href="img/logo-color.png">
+    <link rel="stylesheet" href="consultation.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <section class="main-consult">
+        <div class="bug-size" id="bugg">
+            <img src="img/icon-hamburger.svg" alt="Hambugger" class="bug" id="bugg">
+        </div>
+        <div class="navigation" id="open">
+            <div class="navigation-image">
+                <img src="img/cancel.png" alt="Cancel Sign" id="remove" class="cancel">
+                <img src="img/logo-color.png" alt="The Logo">
+                <div class="logo-text">
+                    <p>medtrack</p>
+                    <span>id:5673</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">dashboard</a></li>
+                    <li><a href="consultation.html">consultation</a></li>
+                    <li><a href="#">medication list</a></li>
+                    <li><a href="treatmentplan.html">treatment plans</a></li>
+                    <li><a href="#">help & support</a></li>
+                    <li><a href="profile.html">profile</a></li>
+                    <li><a href="index.html">log out</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="consultation-body">
+            <div class="patient-info">
+                <p class="patient-info-head">patient information</p>
+                <div class="patient-info-items">
+                    <p>name:Alex Ridwan</p>
+                    <p>age:24</p>
+                    <p>sex:M</p>
+                    <p>genotype:AA</p>
+                    <p>blood-group:O</p>
+                    <p>address:bowen university</p>
+                    <p>id number:5536</p>
+                    <p>card type:single</p>
+                </div>
+            </div>
+
+            <div class="patient-complaints">
+                <p class="patient-complaints-head">patient's complaints</p>
+                <li>coughing</li>
+                <li>coldness</li>
+                <li>vomitting</li>
+                <li>tiredness</li>
+                <li>lose of appetite</li>
+                <div class="complaints-link">
+                    <a href="#">save complaints</a>
+                    <a href="#">take a test</a>
+                </div>
+            </div>
+            
+            <div class="doctor-comment">
+                <p class="doctor-comment-head">doctor's comment</p>
+                <form>
+                    <input type="text" name="name" id="" placeholder="Doctor's name">
+                    <input type="text" name="specialization" id="" placeholder="specialization">
+                    <textarea name="comment" id="" cols="30" rows="10" placeholder="comment/diagnosis"></textarea>
+                </form>
+                <div class="doctor-comment-link">
+                    <a href="#">save</a>
+                    <a href="#">send</a>
+                    <a href="#">print</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="app.js"></script>
+</html>

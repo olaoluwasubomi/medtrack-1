@@ -1,0 +1,84 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    background:#ffffff;
+}
+/* THE DOCTOR'S FORM */
+.head{
+    background:#0073C6;
+    padding:15px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.head img{
+    width:2%;
+    cursor:pointer;
+}
+form{
+    background:#fff;
+    border:1px solid #0073C6;
+    width:30%;
+    padding:50px;
+    margin:100px auto;
+    text-align:center;
+}
+form label{
+    width:100%;
+    font-family: 'Alkatra', cursive;
+    font-weight:light;
+    font-size:1.5em;
+    color:#0073C6;
+}
+form input{
+    display:block;
+    width:100%;
+    padding:10px;
+    margin:20px auto 0;
+    border:none;
+    border-bottom:1px solid #0073C6;
+    outline:none;
+    background:transparent;
+}
+form input::placeholder{
+    color:#0073C6;
+}
+form input[type="text"]{
+    padding:10px 0;
+}
+.sent{
+    background:#0073C6;
+    border:none;
+    width:40%;
+    color:#ffffff;
+    text-transform:capitalize;
+    font-family: 'Alkatra', cursive;
+    font-size:1em;
+    border-radius:10px;
+    display:block;
+    padding:10px;
+    margin:20px auto 0;
+    text-decoration:none;
+}
+@media screen and (max-width:900px){
+    /* THE DOCTOR'S FORM */
+    .head{
+        padding:10px;
+    }
+    .head img{
+        width:10%;
+    }
+    form{
+        width:90%;
+        padding:30px;
+        margin:120px auto;
+    }
+    form input[type="submit"]{
+        width:50%;
+    }
+    /* END OF MEDIA QUERY */
+}

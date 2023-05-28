@@ -1,0 +1,238 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    width: 100%;
+}
+.main-consult{
+    width:100%;
+    display:flex;
+    align-items:start;
+    justify-content:space-between;
+    margin:0 auto;
+    background:#fff
+}
+.bug,.cancel{
+    display:none;
+}
+.bug-size{
+    display:none;
+}
+.navigation{
+    width:20%;
+    padding:20px;
+    margin:0 auto;
+    background:#0073C6;
+    position:sticky;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:100vh;
+}
+.navigation-image img{
+    width:15%;
+    border-radius:50px;
+}
+.navigation-image p{
+    text-transform:capitalize;
+    color:#fff;
+    font-size:1.3em;
+    font-family: 'Montserrat', sans-serif;  
+    margin:10px auto 0; 
+}
+.navigation-image span{
+    display:block;
+    color:#fff;
+    font-size:1em;
+    font-family: 'Montserrat', sans-serif;  
+    text-transform:capitalize;
+    margin-top:5px;
+}
+.navigation nav{
+    margin:10px 0;
+}
+.navigation nav ul li{
+    margin:10px auto;
+    list-style:none;
+}
+.navigation nav ul li a{
+    display:block;
+    text-decoration:none;
+    text-transform:capitalize;
+    color:#fff;
+    font-size:0.9em;
+    font-family: 'Montserrat', sans-serif;  
+    padding:15px 0;
+}
+.consultation-body{
+    width:80%;
+    padding:20px;
+    background:#ffff;
+}
+.patient-info{
+    margin:20px auto;
+}
+.patient-info-head,.patient-complaints-head,.doctor-comment-head{
+    text-transform:capitalize;
+    color:#0073C6;
+    font-size:1.3em;
+    font-family: 'Playfair Display', serif;
+}
+.patient-info-items{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    margin:20px auto;
+}
+.patient-info-items p{
+    font-size:0.95em;
+    font-family: 'Playfair Display', serif;
+    text-transform:capitalize;
+    color:black;
+}
+.patient-complaints{
+    background:#fff;
+}
+.patient-complaints-head{
+    margin:10px auto 0;
+}
+.patient-complaints li{
+    list-style:lower-roman;
+    padding:10px 0;
+    text-transform:capitalize;
+    font-family: 'Playfair Display', serif;
+    font-size:0.9em;
+}
+.complaints-link{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:30%;
+    margin:0;
+}
+.complaints-link a , .doctor-comment-link a{
+    display:block;
+    text-transform:capitalize;
+    text-decoration:none;
+    padding:10px 0;
+    color:#fff;
+    font-family: 'Playfair Display', serif;
+    font-size:0.8em;
+    background:#0073C6;
+    width:40%;
+    text-align:center;
+    border-radius:10px;
+}
+.doctor-comment{
+    margin:20px auto 0;
+}
+.doctor-comment form{
+    margin:10px auto 0;
+}
+.doctor-comment form input , textarea{
+    display:block;
+    margin:10px 0 0;
+    padding:10px 5px 5px;
+    width:30%;
+    border:none;
+    outline:none;
+    background:transparent;
+    border-bottom:1px solid #0073C6;
+}
+.doctor-comment form textarea{
+    border:1px solid #0073C6;
+}
+.doctor-comment form input,textarea::placeholder{
+    font-size:0.9em;
+    font-family: 'Playfair Display', serif;
+    text-transform:capitalize;
+}
+.doctor-comment-link{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:30%;
+    margin:10px 0 0;
+}
+.doctor-comment-link a{
+    width:30%;
+}
+@media screen and (max-width:900px){
+    .main-consult{
+        flex-direction:column;
+    }
+    .bug-size{
+        background:#0073C6;
+        width:100%;
+        padding:20px;
+        display:block;
+    }
+    .bug{
+        display:block;
+        width:10%;
+    }
+    .navigation{
+        display:none;
+        width:100%;
+        height:120vh;
+        position: relative;
+        background:#0073C6;
+    }
+    .navigation-image img{
+        width:15%;
+        /* padding:10px; */
+    }
+    .cancel{
+        margin:10px 0 ;
+    }
+    .navigation nav ul li a{
+        font-size:1em;
+    }
+    .consultation-body{
+        width:100%;
+    }
+    .patient-info{
+        margin:10px auto 0;
+    }
+    .patient-info-head,.patient-complaints-head,.doctor-comment-head{
+        font-size:1em;
+    }
+    .patient-info-items{
+        flex-direction:column;
+        align-items:start;
+        margin:0px auto;
+    }
+    .patient-info-items p{
+        margin:10px 0 0;
+        font-size:0.85em;
+    }
+    .patient-complaints-head{
+        margin:20px auto 0;
+    }
+    .patient-complaints-head li{
+        font-size:0.85em;
+    }
+    .complaints-link{
+        width:90%;
+    }
+    .complaints-link a{
+        width:45%;
+        font-size:0.7em;
+    }
+    .doctor-comment form input, textarea{
+        width:100%;
+    }
+    .doctor-comment form input,textarea::placeholder{
+        font-size:0.8em;
+    }
+    .doctor-comment-link{
+        width:100%;
+    }
+    .doctor-comment-link a{
+        font-size:0.7em;
+    }
+}

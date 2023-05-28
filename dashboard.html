@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon" type="x-icon" href="img/logo-color.png">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+<body>
+    <section class="main-body">
+        <div class="bug-size" id="bugg">
+            <img src="img/icon-hamburger.svg" alt="Hambugger" class="bug" id="bugg">
+        </div>
+        <div class="navigation" id="open">
+            <div class="navigation-image">
+                <img src="img/cancel.png" alt="Cancel Sign" id="remove" class="cancel">
+                <img src="img/logo-color.png" alt="The Logo">
+                <div class="logo-text">
+                    <p>medtrack</p>
+                    <span>id:5673</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">dashboard</a></li>
+                    <li><a href="consultation.html">consultation</a></li>
+                    <li><a href="#">medication list</a></li>
+                    <li><a href="treatmentplan.html">treatment plans</a></li>
+                    <li><a href="#">help & support</a></li>
+                    <li><a href="profile.html">profile</a></li>
+                    <li><a href="index.html">log out</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content-body">
+            <div class="content-body-items">
+                <a href="consultation.html">consultation</a>
+                <a href="#">medications</a>
+                <a href="treatmentplan.html">treatment plans</a>
+            </div>
+            <div class="consultation">
+                <p>past consultation</p>
+                <div style="overflow-x: auto;">
+                    <table class="past-consultation">
+                        <tr>
+                            <th>Doctor's diagnosis</th>
+                            <th>Doctor</th>
+                            <th>Date issued</th>
+                            <th>Symptoms</th>
+                        </tr>
+                        <tr>
+                            <td>Malaria</td>
+                            <td>doctor abel</td>
+                            <td>15th May,2023</td>
+                            <td>Diziness, coughing, vomitting</td>
+                        </tr>
+                        <tr>
+                            <td>Typhoid</td>
+                            <td>doctor abel</td>
+                            <td>11th May,2023</td>
+                            <td>Running stomach, Tiredness</td>
+                        </tr>
+                        <tr>
+                            <td>Typhoid</td>
+                            <td>doctor abel</td>
+                            <td>11th May,2023</td>
+                            <td>Diziness, coughing, vomitting</td>
+                        </tr>
+                        <tr>
+                            <td>Typhoid</td>
+                            <td>doctor favor</td>
+                            <td>11th May,2023</td>
+                            <td>Diziness, coughing, vomitting</td>
+                        </tr>
+                        <tr>
+                            <td>Typhoid</td>
+                            <td>doctor favor</td>
+                            <td>11th May,2023</td>
+                            <td>Diziness, coughing, vomitting</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="treatment-plans">
+                <p>treatment plans</p>
+                <div style="overflow-x: auto;">
+                    <table class="treatment">
+                        <tr>
+                            <th>Drug</th>
+                            <th>Type</th>
+                            <th>Dosage</th>
+                            <th>Reason</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>Paracetamol</td>
+                            <td>Tablet</td>
+                            <td>250g</td>
+                            <td>Malaria</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>Quantem</td>
+                            <td>Drip</td>
+                            <td>250g</td>
+                            <td>Malaria</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>Atesunate</td>
+                            <td>Injection</td>
+                            <td>250g</td>
+                            <td>Malaria</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>Paracetamol</td>
+                            <td>Tablet</td>
+                            <td>250g</td>
+                            <td>Malaria</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>Quantem</td>
+                            <td>Injection</td>
+                            <td>250g</td>
+                            <td>Malaria</td>
+                            <td>Completed</td>
+                        </tr>
+                        <tr>
+                            <td>Paracetamol</td>
+                            <td>Tablet</td>
+                            <td>250g</td>
+                            <td>Malaria</td>
+                            <td>Completed</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- <div class="past-consultation">
+                <p>past consultation</p>
+                <li>malaria</li>
+                <li>malaria</li>
+                <li>malaria</li>
+                <li>malaria</li>
+                <li>malaria</li>
+                <a href="#">see more</a>
+            </div> -->
+            <!-- <div class="past-medications">
+                <p>past medications</p>
+                <li>quantem</li>
+                <li>quantem</li>
+                <li>quantem</li>
+                <li>quantem</li>
+                <li>quantem</li>
+                <a href="#">see more</a>
+            </div> -->
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

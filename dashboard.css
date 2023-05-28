@@ -1,0 +1,181 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    width: 100%;
+}
+.main-body{
+    width:100%;
+    display:flex;
+    align-items:start;
+    justify-content:space-between;
+    margin:0 auto;
+    background:#fff
+}
+.bug,.cancel{
+    display:none;
+}
+.bug-size{
+    display:none;
+}
+.navigation{
+    width:20%;
+    padding:20px;
+    margin:0 auto;
+    background:#0073C6;
+    position:sticky;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:100vh;
+}
+.navigation-image img{
+    width:15%;
+    border-radius:50px;
+}
+.navigation-image p{
+    text-transform:capitalize;
+    color:#fff;
+    font-size:1.3em;
+    font-family: 'Montserrat', sans-serif;  
+    margin:10px auto 0; 
+}
+.navigation-image span{
+    display:block;
+    color:#fff;
+    font-size:1em;
+    font-family: 'Montserrat', sans-serif;  
+    text-transform:capitalize;
+    margin-top:5px;
+}
+.navigation nav{
+    margin:10px 0;
+}
+.navigation nav ul li{
+    margin:10px auto;
+    list-style:none;
+}
+.navigation nav ul li a{
+    display:block;
+    text-decoration:none;
+    text-transform:capitalize;
+    color:#fff;
+    font-size:0.9em;
+    font-family: 'Montserrat', sans-serif;  
+    padding:15px 0;
+}
+.content-body{
+    width:80%;
+    /* background:red ; */
+    padding:20px;
+}
+.content-body-items{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    margin:10px auto;
+}
+.content-body-items a{
+    display:block;
+    background:#0073C6;
+    padding:80px;
+    text-transform:capitalize;
+    text-decoration:none;
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;  
+    font-size:1em;
+    border-radius:10px;
+    transition:all 1s;
+    width:30%;
+    text-align:center;
+}
+.content-body-items a:hover{
+    box-shadow:10px 10px #b9b9b9;
+}
+.consultation p, .treatment-plans p{
+    text-transform:capitalize;
+    font-size:1.2em;
+    font-family: 'Montserrat', sans-serif;  
+    margin:20px auto 0;
+}
+table{
+    width: 100%;
+    margin:10px auto;
+}
+table tr td{
+    border:1px solid #b9b9b9;
+}
+table th{
+    padding:15px;
+    text-align:start;
+    font-family: 'Montserrat', sans-serif;
+    font-size:0.8em;
+    background-color:#0073C6;
+    color:#fff;
+    border:none;
+    font-weight:light;
+}
+table td{
+    padding:15px;
+    text-transform:capitalize;
+    font-family: 'Montserrat', sans-serif;
+    font-size:0.9em;
+}
+
+@media screen and (max-width:900px){
+    .main-body{
+        flex-direction:column;
+    }
+    .bug-size{
+        background:#0073C6;
+        width:100%;
+        padding:20px;
+        display:block;
+    }
+    .bug{
+        display:block;
+        width:10%;
+    }
+    .navigation{
+        display:none;
+        width:100%;
+        height:120vh;
+        position: relative;
+        background:#0073C6;
+    }
+    .navigation-image img{
+        width:15%;
+        /* padding:10px; */
+    }
+    .cancel{
+        margin:10px 0 ;
+    }
+    .navigation nav ul li a{
+        font-size:1em;
+    }
+    .content-body{
+        width:100%;
+        padding:10px 20px;
+    }
+    .content-body-items{
+        flex-direction:column;
+        margin:0 auto;
+    }
+    .content-body-items a{
+        padding:50px;
+        width:100%;
+        margin:10px auto 0;
+    }
+    .consultation p, .treatment-plans p{
+        font-size:1em;
+    }
+    table{
+        border-collapse:collapse;
+        border-spacing:0;
+        width:100%;
+    }
+}

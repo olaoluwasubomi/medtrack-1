@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="icon" type="x-icon" href="img/logo-color.png">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+<body>
+    <section class="profile-main">
+        <div class="bug-size" id="bugg">
+            <img src="img/icon-hamburger.svg" alt="Hambugger" class="bug" id="bugg">
+        </div>
+        <div class="navigation" id="open">
+            <div class="navigation-image">
+                <img src="img/cancel.png" alt="Cancel Sign" id="remove" class="cancel">
+                <img src="img/logo-color.png" alt="The Logo">
+                <div class="logo-text">
+                    <p>medtrack</p>
+                    <span>id:5673</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">dashboard</a></li>
+                    <li><a href="consultation.html">consultation</a></li>
+                    <li><a href="#">medication list</a></li>
+                    <li><a href="treatmentplan.html">treatment plans</a></li>
+                    <li><a href="#">help & support</a></li>
+                    <li><a href="profile.html">profile</a></li>
+                    <li><a href="index.html">log out</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="profile-body">
+            <p class="profile-topic">profile</p>
+            <div class="profile-head">
+                <div class="profile-items">
+                    <p>Abel Isaac Adedotun(Dr.)</p>
+                    <p>Identification Number:5567</p>
+                    <p>Specialization:Internal Medicine</p>
+                    <hr>
+                    <p>First name:Abel</p>
+                    <p>Middle name: Isaac</p>
+                    <p>Last name:Adedotun</p>
+                    <p>Email:abel@gmail.com</p>
+                    <p>Gender:Female</p>
+                    <p>Phone number:080562814657 </p>
+                    <p>Date of Birth:1998-2-5</p>
+                </div>
+                <img src="img/user-regular.svg" alt="User">
+            </div>
+
+            <div class="profile-password">
+                <p  class="profile-topic head">change password</p>
+                <form>
+                    <input type="text" placeholder="current password">
+                    <input type="text" placeholder="new password">
+                    <input type="text" placeholder="confirm password">
+                    <a href="#" class="change-password">change password</a>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

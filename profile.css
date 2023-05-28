@@ -1,0 +1,176 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    width: 100%;
+}
+.profile-main{
+    width:100%;
+    display:flex;
+    align-items:start;
+    justify-content:space-between;
+    margin:0 auto;
+    background:#fff
+}
+.bug,.cancel{
+    display:none;
+}
+.bug-size{
+    display:none;
+}
+.navigation{
+    width:20%;
+    padding:20px;
+    margin:0 auto;
+    background:#0073C6;
+    position:sticky;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:100vh;
+}
+.navigation-image img{
+    width:15%;
+    border-radius:50px;
+}
+.navigation-image p{
+    text-transform:capitalize;
+    color:#fff;
+    font-size:1.3em;
+    font-family: 'Montserrat', sans-serif;  
+    margin:10px auto 0; 
+}
+.navigation-image span{
+    display:block;
+    color:#fff;
+    font-size:1em;
+    font-family: 'Montserrat', sans-serif;  
+    text-transform:capitalize;
+    margin-top:5px;
+}
+.navigation nav{
+    margin:10px 0;
+}
+.navigation nav ul li{
+    margin:10px auto;
+    list-style:none;
+}
+.navigation nav ul li a{
+    display:block;
+    text-decoration:none;
+    text-transform:capitalize;
+    color:#fff;
+    font-size:0.9em;
+    font-family: 'Montserrat', sans-serif;  
+    padding:15px 0;
+}
+.profile-body{
+    width:80%;
+    padding:20px;
+}
+.profile-topic{
+    text-transform:capitalize;
+    font-size:1.2em;
+    color:#0073C6;
+    font-family: 'Montserrat', sans-serif;  
+}
+.profile-head{
+    display:flex;
+    align-items:start;
+    justify-content:space-between;
+    width:100%;
+    margin:10px auto 0;
+    /* background:red; */
+}
+.profile-items p{
+    margin:15px auto 0;
+    font-size:1em;
+    font-family: 'Montserrat', sans-serif; 
+}
+hr{
+    margin:10px 0 0;
+    border:1px solid black;
+    outline:none;
+    width:50%;
+}
+.profile-head img{
+    width:10%;
+}
+.head{
+    margin:20px auto 0; 
+}
+form{
+    margin:10px auto 0;
+}
+form input{
+    display:block;
+    width:100%;
+    margin:15px 0 0;
+    padding:10px;
+    border-radius:10px;
+    border:1px solid black;
+    outline:none;
+}
+form input::placeholder{
+    text-transform:capitalize;
+    font-family: 'Montserrat', sans-serif; 
+    font-size:0.8em;
+}
+.change-password{
+    display:block;
+    text-transform:capitalize;
+    color:#ffff;
+    background:#0073C6;
+    padding:10px;
+    border-radius:10px;
+    width:100%;
+    margin:15px 0 0;
+    text-decoration:none;
+    text-align:center;
+    font-family: 'Montserrat', sans-serif; 
+    font-size:0.7em;
+}
+@media screen and (max-width:900px){
+    .profile-main{
+        flex-direction:column;
+    }
+    .bug-size{
+        background:#0073C6;
+        width:100%;
+        padding:20px;
+        display:block;
+    }
+    .bug{
+        display:block;
+        width:10%;
+    }
+    .navigation{
+        display:none;
+        width:100%;
+        height:120vh;
+        position: relative;
+        background:#0073C6;
+    }
+    .navigation-image img{
+        width:15%;
+        /* padding:10px; */
+    }
+    .cancel{
+        margin:10px 0 ;
+    }
+    .navigation nav ul li a{
+        font-size:1em;
+    }
+    .profile-body{
+        width:100%;
+    }
+    .profile-topic{
+        font-size:1em;
+    }
+    .profile-items p{
+        font-size:0.8em;
+    }
+}
