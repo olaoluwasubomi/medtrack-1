@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medication</title>
+    <link rel="icon" type="x-icon" href="img/logo-color.png">
+    <link rel="stylesheet" href="medication.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+<body>
+    <section class="medication">
+        <div class="bug-size" id="bugg">
+            <img src="img/icon-hamburger.svg" alt="Hambugger" class="bug" id="bugg">
+        </div>
+        <div class="navigation" id="open">
+            <div class="navigation-image">
+                <img src="img/cancel.png" alt="Cancel Sign" id="remove" class="cancel">
+                <img src="img/logo-color.png" alt="The Logo">
+                <div class="logo-text">
+                    <p>medtrack</p>
+                    <span>id:5673</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">dashboard</a></li>
+                    <li><a href="consultation.html">consultation</a></li>
+                    <li><a href="medication.html">medication list</a></li>
+                    <li><a href="treatmentplan.html">treatment plans</a></li>
+                    <li><a href="#">help & support</a></li>
+                    <li><a href="profile.html">profile</a></li>
+                    <li><a href="index.html">log out</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="medication-body">
+            <p class="medication-head">Medication List</p>
+            <div class="medication-list">
+                <div class="button-box">
+                    <button id="myBtn">Amoxicillin</button>
+                    <button id="myButton">Metformin</button>
+                    <button id="button1">Albuterol</button>
+                    <button id="button2">Albuterol</button>
+                    <button id="button3">Albuterol</button>
+                    <button id="button4">Albuterol</button>
+                </div>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <form>
+                            <label for="start">Start Date:</label>
+                            <input type="date" id="date" name="start" required>
+                            <label for="end">End Date:</label>
+                            <input type="date" id="time" name="end" required>  
+                            <label for="dosage">Dosage:</label>
+                            <input type="text" id="dosage" name="dosage" required>
+                            <label for="frequency">Frequency:</label>
+                            <input type="text" id="frequency" name="frequency" required>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="drug-image">
+                    <img src="img/roberto-sorin-RS0-h_pyByk-unsplash.jpg" alt="Drug Image">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="medication.js"></script>
+<script src="app.js"></script>
+</html>
