@@ -100,19 +100,15 @@ body{
 .patient-complaints-head{
     margin:10px auto 0;
 }
-.patient-complaints li{
-    list-style:lower-roman;
-    padding:10px 0;
-    text-transform:capitalize;
-    font-family: 'Playfair Display', serif;
-    font-size:0.9em;
+.text{
+    border:1px solid #0073C6;
 }
 .complaints-link{
     display:flex;
     align-items:center;
     justify-content:space-between;
     width:30%;
-    margin:0;
+    margin:10px 0 0;
 }
 .complaints-link a , .doctor-comment-link a{
     display:block;

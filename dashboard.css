@@ -69,7 +69,6 @@ body{
 }
 .content-body{
     width:80%;
-    /* background:red ; */
     padding:20px;
 }
 .content-body-items{
@@ -92,6 +91,9 @@ body{
     transition:all 1s;
     width:30%;
     text-align:center;
+}
+.treat-move{
+    margin-left:100px;
 }
 .content-body-items a:hover{
     box-shadow:10px 10px #b9b9b9;
