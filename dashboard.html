@@ -55,34 +55,34 @@
                             <th>Symptoms</th>
                         </tr>
                         <tr>
-                            <td>Malaria</td>
-                            <td>doctor abel</td>
+                            <td>Sickle Cell Crisis</td>
+                            <td>Doctor Abel</td>
                             <td>15th May,2023</td>
-                            <td>Diziness, coughing, vomitting</td>
+                            <td>Severe pain in the bones, joints, fatigue and weakness </td>
                         </tr>
                         <tr>
-                            <td>Typhoid</td>
-                            <td>doctor abel</td>
+                            <td>Anemia</td>
+                            <td>Doctor Tunde</td>
                             <td>11th May,2023</td>
-                            <td>Running stomach, Tiredness</td>
+                            <td>Pale skin, shortness of breath especially during physical activity.</td>
                         </tr>
                         <tr>
-                            <td>Typhoid</td>
-                            <td>doctor abel</td>
+                            <td>Acute Chest Syndrome</td>
+                            <td>Doctor Sam</td>
                             <td>11th May,2023</td>
-                            <td>Diziness, coughing, vomitting</td>
+                            <td>Chest pain,especially with deep breathing or coughing, fatigue</td>
                         </tr>
                         <tr>
-                            <td>Typhoid</td>
-                            <td>doctor favor</td>
+                            <td>Stroke</td>
+                            <td>Doctor Favor</td>
                             <td>11th May,2023</td>
-                            <td>Diziness, coughing, vomitting</td>
+                            <td>Sudden severe headache, vision problems, loss of coordination or balance.</td>
                         </tr>
                         <tr>
-                            <td>Typhoid</td>
-                            <td>doctor favor</td>
+                            <td>Leg Ulcers</td>
+                            <td>Doctor Tunji</td>
                             <td>11th May,2023</td>
-                            <td>Diziness, coughing, vomitting</td>
+                            <td>Painful sores or open wounds, typically on the lower legs or ankles.</td>
                         </tr>
                     </table>
                 </div>
@@ -100,70 +100,66 @@
                             <th>Status</th>
                         </tr>
                         <tr>
-                            <td>Paracetamol</td>
-                            <td>Tablet</td>
+                            <td>Analgesics</td>
+                            <td>Acetaminophen</td>
                             <td>250g</td>
-                            <td>Malaria</td>
+                            <td>Sickle Cell Crisis</td>
+                            <td>Not Completed</td>
+                        </tr>
+                        <tr>
+                            <td>Iron Supplements</td>
+                            <td>Ferrous Sulfate</td>
+                            <td>250g</td>
+                            <td>Anemia</td>
                             <td>Completed</td>
                         </tr>
                         <tr>
-                            <td>Quantem</td>
-                            <td>Drip</td>
+                            <td>Antibiotics</td>
+                            <td>Ceftriaxone</td>
                             <td>250g</td>
-                            <td>Malaria</td>
+                            <td>Acute Chest Syndrome</td>
                             <td>Completed</td>
                         </tr>
                         <tr>
-                            <td>Atesunate</td>
-                            <td>Injection</td>
+                            <td>Analgesics</td>
+                            <td>Opioids</td>
                             <td>250g</td>
-                            <td>Malaria</td>
+                            <td>Stroke</td>
                             <td>Completed</td>
                         </tr>
                         <tr>
-                            <td>Paracetamol</td>
-                            <td>Tablet</td>
+                            <td>Antibiotics</td>
+                            <td>Doxycycline</td>
                             <td>250g</td>
-                            <td>Malaria</td>
+                            <td>Leg Ulcer</td>
                             <td>Completed</td>
                         </tr>
                         <tr>
-                            <td>Quantem</td>
-                            <td>Injection</td>
+                            <td>Antibiotics</td>
+                            <td>Clindamycin</td>
                             <td>250g</td>
-                            <td>Malaria</td>
-                            <td>Completed</td>
-                        </tr>
-                        <tr>
-                            <td>Paracetamol</td>
-                            <td>Tablet</td>
-                            <td>250g</td>
-                            <td>Malaria</td>
+                            <td>Leg Ulcer</td>
                             <td>Completed</td>
                         </tr>
                     </table>
                 </div>
             </div>
-            <!-- <div class="past-consultation">
-                <p>past consultation</p>
-                <li>malaria</li>
-                <li>malaria</li>
-                <li>malaria</li>
-                <li>malaria</li>
-                <li>malaria</li>
-                <a href="#">see more</a>
-            </div> -->
-            <!-- <div class="past-medications">
-                <p>past medications</p>
-                <li>quantem</li>
-                <li>quantem</li>
-                <li>quantem</li>
-                <li>quantem</li>
-                <li>quantem</li>
-                <a href="#">see more</a>
-            </div> -->
+            <div class="chat-icon">
+                <img src="img/Message-Free-Icon-fidsw.png" alt="" id="image">
+                <img src="img/cancel.png" alt="" id="cancel" style="display:none;" >
+            </div>
+            <div class="chat-container" id="chat">
+                <div class="break">
+                    <div class="chat-messages" id="chat-messages"></div>
+                    <div class="chat-input">
+                        <input type="text" id="message-input" placeholder="Type your message...">
+                        <button id="send-button">Send</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <script src="app.js"></script>
+    <script src="communication.js"></script>
 </body>
 </html>

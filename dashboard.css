@@ -3,6 +3,9 @@
     margin:0;
     box-sizing:border-box;
 }
+html{
+    scroll-behavior:smooth;
+}
 body{
     width: 100%;
 }
@@ -12,7 +15,6 @@ body{
     align-items:start;
     justify-content:space-between;
     margin:0 auto;
-    background:#fff
 }
 .bug,.cancel{
     display:none;
@@ -33,7 +35,7 @@ body{
     height:100vh;
 }
 .navigation-image img{
-    width:15%;
+    width:25%;
     border-radius:50px;
 }
 .navigation-image p{
@@ -104,7 +106,7 @@ body{
     font-family: 'Montserrat', sans-serif;  
     margin:20px auto 0;
 }
-table{
+.past-consultation,.treatment{
     width: 100%;
     margin:10px auto;
 }
@@ -123,11 +125,74 @@ table th{
 }
 table td{
     padding:15px;
-    text-transform:capitalize;
+    /* text-transform:capitalize; */
     font-family: 'Montserrat', sans-serif;
     font-size:0.9em;
 }
-
+.chat-icon{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #0073C6;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    cursor: pointer;
+    z-index: 9999;
+}
+.chat-icon img{
+    width:50%;
+}
+.chat-container{
+    /* background:red; */
+    margin:0 auto;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width:100%;
+    display:none;
+}
+.break{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction:column;
+    width:30%;
+    margin:0 930px 0;
+    background:rgba(0,0,0,.7);
+    /* padding:20px; */
+}
+.chat-messages{
+    /* border:1px solid red; */
+    padding:10px 10px 500px;
+    width:100%;
+    color:#fff;
+}
+.chat-input{
+    margin:10px auto 0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+}
+.chat-input input{
+    width:80%;
+    padding:10px 5px;
+    border:none;
+    outline:none;
+    background:#eeeeee;
+    color:black;
+}
+.chat-input button{
+    border:none;
+    padding:10px;
+    width:19%;
+    cursor:pointer;
+}
 @media screen and (max-width:900px){
     .main-body{
         flex-direction:column;
@@ -145,7 +210,7 @@ table td{
     .navigation{
         display:none;
         width:100%;
-        height:120vh;
+        height:135vh;
         position: relative;
         background:#0073C6;
     }
@@ -179,5 +244,14 @@ table td{
         border-collapse:collapse;
         border-spacing:0;
         width:100%;
+    }
+    .break{
+        width:100%;
+        margin:0 auto;
+        background:rgba(0,0,0,.7);
+    }
+    .chat-messages{
+        padding:10px 10px 300px;
+        color:#fff;
     }
 }

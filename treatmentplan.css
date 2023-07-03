@@ -33,7 +33,7 @@ body{
     height:100vh;
 }
 .navigation-image img{
-    width:15%;
+    width:25%;
     border-radius:50px;
 }
 .navigation-image p{
@@ -105,22 +105,30 @@ table td{
     font-size:1em;
 }
 form{
-    margin:10px auto 0;
+    margin:10px 0 0;
+    /* background:red; */
+    width:40%;
 }
 form input{
     display:block;
-    width:30%;
-    margin:10px 0 0;
+    width:100%;
+    margin:20px 0 0;
     border:none;
     padding:10px 0;
     outline:none;
     background:transparent;
-    border-bottom:1px solid #0073C6;
+    border:1px solid black;
 }
 form input::placeholder{
     text-transform:capitalize;
     font-family: 'Montserrat', sans-serif;
     font-size:0.8em;
+    padding:10px;
+}
+form input[type="submit"]{
+    background:#0073C6;
+    border:none;
+    color:#fff;
 }
 .new-treatment-link{
     display:block;
@@ -134,6 +142,70 @@ form input::placeholder{
     margin:10px 0 0;
     text-align:center;
     font-family: 'Montserrat', sans-serif;
+}
+.chat-icon{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #0073C6;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    cursor: pointer;
+    z-index: 9999;
+}
+.chat-icon img{
+    width:50%;
+}
+.chat-container{
+    /* background:red; */
+    margin:0 auto;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width:100%;
+    display:none;
+}
+.break{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction:column;
+    width:30%;
+    margin:0 930px 0;
+    background:rgba(0,0,0,.7);
+    /* padding:20px; */
+}
+.chat-messages{
+    /* border:1px solid red; */
+    padding:10px 10px 500px;
+    width:100%;
+    color:#fff;
+}
+.chat-input{
+    margin:10px auto 0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+}
+.chat-input input{
+    width:80%;
+    padding:10px 5px;
+    border:none;
+    outline:none;
+    background:#eeeeee;
+    color:black;
+}
+.chat-input button{
+    border:none;
+    padding:10px;
+    width:19%;
+    cursor:pointer;
 }
 @media screen and (max-width:900px){
     .treatment-plans{
@@ -172,11 +244,23 @@ form input::placeholder{
     .new-treatment p{
         font-size:0.9em;
     }
+    form{
+        width:100%;
+    }
     form input{
         width:100%;
     }
     .new-treatment-link{
         width:50%;
         font-size:0.7em;
+    }
+    .break{
+        width:100%;
+        margin:0 auto;
+        background:rgba(0,0,0,.7);
+    }
+    .chat-messages{
+        padding:10px 10px 300px;
+        color:#fff;
     }
 }

@@ -33,7 +33,7 @@ body{
     height:100vh;
 }
 .navigation-image img{
-    width:15%;
+    width:25%;
     border-radius:50px;
 }
 .navigation-image p{
@@ -102,6 +102,10 @@ body{
 }
 .text{
     border:1px solid #0073C6;
+    width:50%;
+}
+.comment{
+    width:50%;
 }
 .complaints-link{
     display:flex;
@@ -139,6 +143,9 @@ body{
     background:transparent;
     border-bottom:1px solid #0073C6;
 }
+.doctor-comment form input{
+    width:50%;
+}
 .doctor-comment form textarea{
     border:1px solid #0073C6;
 }
@@ -157,6 +164,70 @@ body{
 .doctor-comment-link a{
     width:30%;
 }
+.chat-icon{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #0073C6;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    cursor: pointer;
+    z-index: 9999;
+}
+.chat-icon img{
+    width:50%;
+}
+.chat-container{
+    /* background:red; */
+    margin:0 auto;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width:100%;
+    display:none;
+}
+.break{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction:column;
+    width:30%;
+    margin:0 930px 0;
+    background:rgba(0,0,0,.7);
+    /* padding:20px; */
+}
+.chat-messages{
+    /* border:1px solid red; */
+    padding:10px 10px 500px;
+    width:100%;
+    color:#fff;
+}
+.chat-input{
+    margin:10px auto 0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+}
+.chat-input input{
+    width:80%;
+    padding:10px 5px;
+    border:none;
+    outline:none;
+    background:#eeeeee;
+    color:black;
+}
+.chat-input button{
+    border:none;
+    padding:10px;
+    width:19%;
+    cursor:pointer;
+}
 @media screen and (max-width:900px){
     .main-consult{
         flex-direction:column;
@@ -174,7 +245,7 @@ body{
     .navigation{
         display:none;
         width:100%;
-        height:120vh;
+        height:135vh;
         position: relative;
         background:#0073C6;
     }
@@ -193,6 +264,15 @@ body{
     }
     .patient-info{
         margin:10px auto 0;
+    }
+    .text{
+        width:100%;
+    }
+    .comment{
+        width:100%;
+    }
+    .doc-name{
+        width:100%;
     }
     .patient-info-head,.patient-complaints-head,.doctor-comment-head{
         font-size:1em;
@@ -230,5 +310,14 @@ body{
     }
     .doctor-comment-link a{
         font-size:0.7em;
+    }
+    .break{
+        width:100%;
+        margin:0 auto;
+        background:rgba(0,0,0,.7);
+    }
+    .chat-messages{
+        padding:10px 10px 300px;
+        color:#fff;
     }
 }

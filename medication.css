@@ -33,7 +33,7 @@ body{
     height:100vh;
 }
 .navigation-image img{
-    width:15%;
+    width:25%;
     border-radius:50px;
 }
 .navigation-image p{
@@ -73,17 +73,51 @@ body{
 }
 .medication-head{
     text-transform:capitalize;
-    font-size:1em;
+    font-size:2em;
     font-family: 'Montserrat', sans-serif;  
     text-align:center;
 }
-.medication-list{
+.medication-body table{
+    width:100%;
+    border-collapse:collapse;
+    margin:20px auto 0;
+}
+.medication-body table th,td{
+    border:1px solid #b9b9b9;
+    padding:10px;
+}
+.medication-body table th{
+    background:#0073C6;
+    font-family: 'Montserrat', sans-serif;  
+    font-size:0.9em;
+    color:#fff;
+}
+.medication-body table td{
+    outline:none;
+    border:1px solid #b9b9b9;
+    font-family: 'Montserrat', sans-serif;  
+    text-align:center;
+    font-size:0.9em;   
+}
+.medication-link{
+    display:block;
+    padding:10px;
+    text-decoration:none;
+    text-transform:capitalize;
+    background:#0073C6;
+    margin:20px 0 0;
+    color:#fff;
+    font-family: 'Montserrat', sans-serif;  
+    width:15%;
+    text-align:center;
+    border-radius:10px;
+    font-size:1em;
+}
+/* .medication-list{
     display:flex;
-    /* align-items:center; */
     justify-content:space-between;
     width:100%;
     margin:40px auto 0;
-    /* background:red; */
 }
 .button-box{
     display:flex;
@@ -118,10 +152,70 @@ body{
     background-color:#0073C6;
     margin:50px auto;
     padding: 20px;
-    /* border: 1px solid #888; */
     width:30%;
     animation-name:animatetop;
     animation-duration:0.4s;
+} */
+.chat-icon{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #0073C6;
+    border-radius: 50%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    cursor: pointer;
+    z-index: 9999;
+}
+.chat-icon img{
+    width:50%;
+}
+.chat-container{
+    margin:0 auto;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width:100%;
+    display:none;
+}
+.break{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction:column;
+    width:30%;
+    margin:0 930px 0;
+    background:rgba(0,0,0,.7);
+}
+.chat-messages{
+    padding:10px 10px 500px;
+    width:100%;
+    color:#fff;
+}
+.chat-input{
+    margin:10px auto 0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+}
+.chat-input input{
+    width:80%;
+    padding:10px 5px;
+    border:none;
+    outline:none;
+    background:#eeeeee;
+    color:black;
+}
+.chat-input button{
+    border:none;
+    padding:10px;
+    width:19%;
+    cursor:pointer;
 }
 @keyframes animatetop{
     from{top: -300px; opacity:0}
@@ -200,7 +294,8 @@ form input[type="submit"]{
         width:100%;
     }
     .medication-head{
-        text-align:start;
+        text-align:center;
+        font-size:1.5em;
     }
     .medication-list{
         flex-direction:column-reverse;
@@ -226,5 +321,14 @@ form input[type="submit"]{
     }
     form input[type="submit"]{
         width:30%;
+    }
+    .break{
+        width:100%;
+        margin:0 auto;
+        background:rgba(0,0,0,.7);
+    }
+    .chat-messages{
+        padding:10px 10px 300px;
+        color:#fff;
     }
 }

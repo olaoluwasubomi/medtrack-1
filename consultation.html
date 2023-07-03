@@ -46,9 +46,9 @@
                     <p>name:Alex Ridwan</p>
                     <p>age:24</p>
                     <p>sex:M</p>
-                    <p>genotype:AA</p>
+                    <p>genotype:SS</p>
                     <p>blood-group:O</p>
-                    <p>address:bowen university</p>
+                    <p>address:number 12, somolu estate</p>
                     <p>id number:5536</p>
                     <p>card type:single</p>
                 </div>
@@ -68,9 +68,9 @@
             <div class="doctor-comment">
                 <p class="doctor-comment-head">doctor's comment</p>
                 <form>
-                    <input type="text" name="name" id="" placeholder="Doctor's name">
-                    <input type="text" name="specialization" id="" placeholder="specialization">
-                    <textarea name="comment" id="" cols="30" rows="10" placeholder="comment/diagnosis"></textarea>
+                    <input type="text" name="name" id="" placeholder="Doctor's name" class="doc-name">
+                    <input type="text" name="specialization" id="" placeholder="specialization" class="doc-name">
+                    <textarea name="comment" id="" cols="30" rows="10" placeholder="comment/diagnosis" class="comment"></textarea>
                 </form>
                 <div class="doctor-comment-link">
                     <a href="#">save</a>
@@ -79,7 +79,21 @@
                 </div>
             </div>
         </div>
+        <div class="chat-icon">
+            <img src="img/Message-Free-Icon-fidsw.png" alt="" id="image">
+            <img src="img/cancel.png" alt="" id="cancel" style="display:none;" >
+        </div>
+        <div class="chat-container" id="chat">
+            <div class="break">
+                <div class="chat-messages" id="chat-messages"></div>
+                <div class="chat-input">
+                    <input type="text" id="message-input" placeholder="Type your message...">
+                    <button id="send-button">Send</button>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 <script src="app.js"></script>
+<script src="communication.js"></script>
 </html>

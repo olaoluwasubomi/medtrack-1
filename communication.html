@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messaging</title>
+    <link rel="stylesheet" href="communication.css">
+    <link rel="icon" type="x-icon" href="img/logo-color.png">
+</head>
+<body>
+    <section class="main">
+        <div class="bug-size" id="bugg">
+            <img src="img/icon-hamburger.svg" alt="Hambugger" class="bug" id="bugg">
+        </div>
+        <div class="navigation" id="open">
+            <div class="navigation-image">
+                <img src="img/cancel.png" alt="Cancel Sign" id="remove" class="cancel">
+                <img src="img/logo-color.png" alt="The Logo">
+                <div class="logo-text">
+                    <p>medtrack</p>
+                    <span>id:5673</span>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">dashboard</a></li>
+                    <li><a href="consultation.html">consultation</a></li>
+                    <li><a href="medication.html">medication list</a></li>
+                    <li><a href="treatmentplan.html">treatment plans</a></li>
+                    <li><a href="communication.html">messaging</a></li>
+                    <li><a href="#">help & support</a></li>
+                    <li><a href="profile.html">profile</a></li>
+                    <li><a href="index.html">log out</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="chat-container">
+            <div class="chat-messages" id="chat-messages">
+                <!-- Chat messages will be dynamically added here -->
+              </div>
+              <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Type your message...">
+                <button id="send-button">Send</button>
+              </div>
+        </div>
+    </section>
+</body>
+<script src="communication.js"></script>
+</html>
