@@ -331,4 +331,7 @@ form input[type="submit"]{
         padding:10px 10px 300px;
         color:#fff;
     }
+    .medication-link{
+        width:40%;
+    }
 }
